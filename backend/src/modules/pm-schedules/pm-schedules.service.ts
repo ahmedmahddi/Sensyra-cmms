@@ -23,7 +23,7 @@ export class PMSchedulesService {
 
   async findAll(organizationId: string) {
     return this.prisma.pMSchedule.findMany({
-      where: { organizationId },
+      where: { organizationId, deletedAt: null },
       include: {
         asset: { select: { id: true, name: true, assetTag: true } },
         procedure: { select: { id: true, name: true } },
@@ -35,7 +35,7 @@ export class PMSchedulesService {
 
   async findOne(id: string, organizationId: string) {
     const schedule = await this.prisma.pMSchedule.findFirst({
-      where: { id, organizationId },
+      where: { id, organizationId, deletedAt: null },
       include: {
         asset: true,
         procedure: true,
