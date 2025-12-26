@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "سينسيرا CMMS",
+    "dashboard": "لوحة التحكم",
+    "workOrders": "أوامر العمل",
+    "assets": "الأصول",
+    "locations": "المواقع",
+    "inventory": "المخزون",
+    "pmSchedules": "الصيانة الوقائية",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "description": "نظرة عامة على عمليات الصيانة الخاصة بك.",
+    "openWorkOrders": "أوامر العمل المفتوحة",
+    "inProgress": "قيد التنفيذ",
+    "completed": "مكتملة",
+    "totalAssets": "إجمالي الأصول"
+  },
+  "auth": {
+    "loginTitle": "مرحبا بعودتك",
+    "loginDescription": "أدخل بياناتك للوصول إلى سينسيرا",
+    "registerTitle": "إنشاء حساب",
+    "registerDescription": "ابدأ مع سينسيرا CMMS"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "tunisian-cmms",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down",
+    "test:backend": "cd backend && npm run test",
+    "test:frontend": "cd frontend && npm run test"
+  }
+}

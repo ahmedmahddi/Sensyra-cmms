@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "Sensyra CMMS",
+    "dashboard": "Dashboard",
+    "workOrders": "Work Orders",
+    "assets": "Assets",
+    "locations": "Locations",
+    "inventory": "Inventory",
+    "pmSchedules": "PM Schedules",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Overview of your maintenance operations.",
+    "openWorkOrders": "Open Work Orders",
+    "inProgress": "In Progress",
+    "completed": "Completed",
+    "totalAssets": "Total Assets"
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginDescription": "Enter your credentials to access Sensyra",
+    "registerTitle": "Create an Account",
+    "registerDescription": "Get started with Sensyra CMMS"
+  }
+}

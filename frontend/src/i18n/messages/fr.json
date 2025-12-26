@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "Sensyra CMMS",
+    "dashboard": "Tableau de bord",
+    "workOrders": "Ordres de travail",
+    "assets": "Équipements",
+    "locations": "Emplacements",
+    "inventory": "Inventaire",
+    "pmSchedules": "Maintenance préventive",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "description": "Aperçu de vos opérations de maintenance.",
+    "openWorkOrders": "Ordres ouverts",
+    "inProgress": "En cours",
+    "completed": "Terminés",
+    "totalAssets": "Total équipements"
+  },
+  "auth": {
+    "loginTitle": "Bienvenue",
+    "loginDescription": "Entrez vos identifiants pour accéder à Sensyra",
+    "registerTitle": "Créer un compte",
+    "registerDescription": "Commencez avec Sensyra CMMS"
+  }
+}
