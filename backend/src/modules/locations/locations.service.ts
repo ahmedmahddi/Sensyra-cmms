@@ -37,7 +37,7 @@ export class LocationsService {
 
   async findAll(organizationId: string) {
     return this.prisma.location.findMany({
-      where: { organizationId },
+      where: { organizationId, deletedAt: null },
       include: {
         parent: { select: { id: true, name: true } },
         _count: { select: { assets: true, children: true } },
@@ -48,7 +48,7 @@ export class LocationsService {
 
   async findOne(id: string, organizationId: string) {
     const location = await this.prisma.location.findFirst({
-      where: { id, organizationId },
+      where: { id, organizationId, deletedAt: null },
       include: {
         parent: true,
         children: true,
@@ -73,7 +73,9 @@ export class LocationsService {
 
     // Check for dependencies
     const childrenCount = await this.prisma.location.count({ where: { parentId: id } });
-    const assetsCount = await this.prisma.asset.count({ where: { locationId: id } });
+    const assetsCount = await this.prisma.asset.count({
+      where: { locationId: id, deletedAt: null },
+    });
 
     if (childrenCount > 0 || assetsCount > 0) {
       throw new ConflictException(

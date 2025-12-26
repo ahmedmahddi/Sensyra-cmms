@@ -27,14 +27,14 @@ export class InventoryService {
 
   async findAll(organizationId: string) {
     return this.prisma.part.findMany({
-      where: { organizationId },
+      where: { organizationId, deletedAt: null },
       orderBy: { name: 'asc' },
     });
   }
 
   async findOne(id: string, organizationId: string) {
     const part = await this.prisma.part.findFirst({
-      where: { id, organizationId },
+      where: { id, organizationId, deletedAt: null },
       include: {
         stockMovements: {
           take: 10,
