@@ -12,6 +12,9 @@ import { AssetsModule } from './modules/assets/assets.module';
 import { LocationsModule } from './modules/locations/locations.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 import { PMSchedulesModule } from './modules/pm-schedules/pm-schedules.module';
+import { VendorsModule } from './modules/vendors/vendors.module';
+import { TeamsModule } from './modules/teams/teams.module';
+import { AttachmentsModule } from './modules/attachments/attachments.module';
 
 @Module({
   imports: [
@@ -28,6 +31,9 @@ import { PMSchedulesModule } from './modules/pm-schedules/pm-schedules.module';
     LocationsModule,
     InventoryModule,
     PMSchedulesModule,
+    VendorsModule,
+    TeamsModule,
+    AttachmentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
